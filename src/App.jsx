@@ -37,7 +37,7 @@ function App() {
   return (
     <>
       {loading ? ( 
-        <CountriesListShimmer />
+      <CountriesListShimmer />
       ) : (
         <div>
           <div className='rapp'>
