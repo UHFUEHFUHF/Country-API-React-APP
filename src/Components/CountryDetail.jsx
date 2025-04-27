@@ -57,17 +57,20 @@ const CountryDetail = () => {
           <h4><strong>Subregion:</strong> More specifically, it falls under {CountryFullDetails.Subregion} subregion.</h4>
           <h4><strong>Total Area:</strong> It covers an area of {CountryFullDetails.Area} square kilometers.</h4>
           <h4><strong>Currency Used:</strong> People here use {CountryFullDetails.Currencies} for buying and selling things.</h4>
+          </div>
+          <div className='content-data'>
           <h4><strong>Languages Spoken:</strong> Common languages spoken are {CountryFullDetails.Languages}.</h4>
           <h4><strong>Timezones:</strong> This country follows these timezone(s): {CountryFullDetails.Timezones}.</h4>
           <h4><strong>Continent:</strong> It is located on the {CountryFullDetails.Continents} continent.</h4>
-          <h4><strong>View on Google Maps:</strong> You can find it <a href={CountryFullDetails.Maps} target="_blank" rel="noreferrer">here</a> on Google Maps.</h4>
+          <h4><strong>View on Google Maps:</strong> You can find <a href={CountryFullDetails.Maps} target="_blank" rel="noreferrer">{CountryFullDetails.name}</a> on Google Maps.</h4>
           <h4><strong>Week Starts From:</strong> In this country, the week starts on {CountryFullDetails.StartOfWeek}.</h4>
           <h4><strong>Neighboring Countries:</strong> Countries that share borders are: {CountryFullDetails.Borders}.</h4>
           <h4><strong>Country Status:</strong> The current official status is {CountryFullDetails.Status}.</h4>
           <h4><strong>Is it Independent?</strong> {CountryFullDetails.Independent}.</h4>
           <h4><strong>Member of United Nations:</strong> {CountryFullDetails.UNMember}.</h4>
           <h4><strong>Driving Side </strong> People here drive on the {CountryFullDetails.CarSide} side of the road.</h4>
-        </div>
+          </div>
+        
       </div>
     </>
   );
